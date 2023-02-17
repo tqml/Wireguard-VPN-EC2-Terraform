@@ -1,0 +1,16 @@
+scripts/etc-wireguard
+
+# Do not leak sensible data
+terraform/terraform.tfvars
+data/keys/*
+!data/keys/.keep
+ansible/vars.yml
+
+
+# Do not track terraform state
+.terraform
+.terraform*
+*.tfstate
+*.tfstate.*
+.infracost
+out
