@@ -10,7 +10,7 @@ __IMPORTANT INFO__:
 
 ## Deployment Part 1: Deploy AWS Infrastructure with Terraform
 
-> You don't need to this step with terraform, you could also create the instances yourself.
+> You don't need to do this step with terraform, you could also create the resources yourself in the AWS console.
 
 Go the `terraform` folder and rename the file `terraform.tvars.example` to `terraform.tfvars`. Adapt the
 
@@ -26,7 +26,8 @@ terraform init
 # Run a terraform plan
 terraform plan
 
-# Terraform apply will create the configuration
+# Terraform apply will deploy the configuration to AWS and create all
+# the resources that are specified
 terraform apply
 ```
 
